@@ -22,9 +22,10 @@ def newlog(var):
                 f.write("This is the ether_logs file\n" + "Here all the unrecognized words are stored\n")
                 f.write("It currently holds\n" + "0\n" + "logs" + "\n\n")
 
+
+
         except:
             pass
-
 
         # changes the number of logs in the header of the file
         with open(savefile, 'r') as file:

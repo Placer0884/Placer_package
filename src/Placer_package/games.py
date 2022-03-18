@@ -1,10 +1,46 @@
 
+
+def profile(user, attribute, value):
+    try:
+        open(user + '_profile.txt', 'r')
+    except:
+        attributes = ["Name", "Age", "Origin"]
+        with open(user + '_profile.txt', 'w') as file:
+            for i in attributes:
+                file.write(i + 3*"\n")
+
+    settings_file = open(user + '_profile.txt', 'r').readlines()
+    attribute = attribute + "\n"
+
+    for i in settings_file:
+
+        if attribute.lower() == i.lower():
+            settings_file[settings_file.index(i) + 1] = value + "\n"
+
+            open(user + '_profile.txt', 'w').writelines(settings_file)
+
+            break
+
+
+profile("Erik", 'age', input("How are you today?"))
+
+
+
+
+
+
+
+
+
+
+
+# HIGHSCORE WITH USERNAME
+
 # This variable sets the save file for the function including usernames
 savefile_wu = 'highscore_wu.txt'
 
 # This variable sets the value file for the function including usernames
 savefile = "highscores.txt"
-
 
 
 # This function checks if the project contains a savefile_wu and creates one if there is not
@@ -58,13 +94,15 @@ def highscore_wu(score, username):
 
                 break
 
-        with open(savefile_wu, 'w', encoding='utf-8') as file:
+        with open(savefile_wu, 'w') as file:
             file.writelines(savescore)
         # Updates the highscore_wu file
 
 
 # --------------------------------------------------------------------------------------------------------------
 
+
+# HIGHSCORE WITHOUT USERNAME
 
 def highscore_file():
     global savefile
