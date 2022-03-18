@@ -4,10 +4,12 @@
 
 
 ### The package currently contains:
-- Shortr  - Basic input formating
-- Games   - Module for games, currently holds saveable highscore creation and usage function
-- Ether   - Unrecognized input logger, used to log unrecognized inputs into a ether_logs.txt file
+- Shortr    -   Basic input formating
+- Games     -   Module for games, currently holds saveable highscore creation and usage function
+- Ether     -   Unrecognized input logger, used to log unrecognized inputs into a ether_logs.txt file
+- Settings  -   Settings saving to external file
 
+_0884
 
 ### License:
 **Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**
