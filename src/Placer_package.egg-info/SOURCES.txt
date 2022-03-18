@@ -1,8 +1,0 @@
-LICENSE
-README.md
-pyproject.toml
-setup.cfg
-src/Placer_package.egg-info/PKG-INFO
-src/Placer_package.egg-info/SOURCES.txt
-src/Placer_package.egg-info/dependency_links.txt
-src/Placer_package.egg-info/top_level.txt
